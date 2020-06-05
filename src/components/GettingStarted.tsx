@@ -42,12 +42,11 @@ const GettingStarted = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/CitiesSkylinesMultiplayer/CSM/actions?query=workflow%3ACI"
+                href="https://github.com/CitiesSkylinesMultiplayer/CSM/actions?query=workflow%3ACI+is%3Asuccess+branch%3Amaster"
               >
                 here
               </a>
-              , and click on the latest build which has both a green check mark
-              next to it and the text 'master' (remember, both the client and
+              , and click on the latest build (remember, both the client and
               host must use the same version). Under the artifacts heading,
               click on the 'CSM [Version]' link to download.
             </li>
