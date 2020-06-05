@@ -4,6 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import GettingStarted from './GettingStarted';
+import Usage from './Usage';
 
 function App() {
   return (
@@ -14,16 +16,25 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="https://steamcommunity.com/sharedfiles/filedetails/?id=1558438291">
+              <Nav.Link
+                target="_blank"
+                href="https://steamcommunity.com/sharedfiles/filedetails/?id=1558438291"
+              >
                 Steam Workshop
               </Nav.Link>
-              <Nav.Link href="https://www.patreon.com/CSM_MultiplayerMod">
+              <Nav.Link
+                target="_blank"
+                href="https://www.patreon.com/CSM_MultiplayerMod"
+              >
                 Patreon
               </Nav.Link>
-              <Nav.Link href="https://discord.gg/RjACPhd">
+              <Nav.Link target="_blank" href="https://discord.gg/RjACPhd">
                 Discord Server
               </Nav.Link>
-              <Nav.Link href="https://github.com/CitiesSkylinesMultiplayer/CSM/">
+              <Nav.Link
+                target="_blank"
+                href="https://github.com/CitiesSkylinesMultiplayer/CSM/"
+              >
                 GitHub
               </Nav.Link>
             </Nav>
@@ -33,15 +44,22 @@ function App() {
 
       <Jumbotron fluid>
         <Container>
-          <h1>Under Development</h1>
+          <h1>Welcome</h1>
           <p>
-            This website is still under development. See the links above for
-            more information.
+            Cities: Skylines Multiplayer (CSM) is an in-development multiplayer
+            mod for Cities: Skylines. <br />
+            This mod aims to provide a simple client-server experience where
+            users can play and build together in a single game.
           </p>
         </Container>
       </Jumbotron>
 
-      <footer className="Footer">
+      <Container>
+        <GettingStarted />
+        <Usage />
+      </Container>
+
+      <footer className="Footer pt-3 pb-1 mt-5">
         <Container>
           <p>
             <small>
