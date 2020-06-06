@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import GettingStarted from './GettingStarted';
 import Usage from './Usage';
+import FAQ from './FAQ';
 import ReactGA from 'react-ga';
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
           <Col sm={12} md={9}>
             <GettingStarted />
             <Usage />
+            <FAQ />
           </Col>
           <Col sm={12} md={3} className="d-none d-lg-block">
             <div className="js-toc sticky-top" />

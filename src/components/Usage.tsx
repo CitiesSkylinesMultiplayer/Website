@@ -7,11 +7,11 @@ const Usage = () => {
       <h2 id="usage">Usage</h2>
       <h3 id="usage-general">General</h3>
       <p>
-        The Cities: Skylines Multiplayer mod enable multiplayer via a
+        The Cities: Skylines Multiplayer mod enables multiplayer via a
         client-server approach. This means one player will act as the host (or
-        server), and other players will connect to them. Decided which player
-        will be the host (the host will have a little more work to do in order
-        to play, and will have the multiplayer save on their computer).
+        server), and other players will connect to them. Decide which player
+        will be the host (the host will have some more work to do in order to
+        play).
       </p>
 
       <h3 id="usage-host">Host</h3>
@@ -76,7 +76,7 @@ const Usage = () => {
           rel="noopener noreferrer"
           href="https://www.noip.com/support/knowledgebase/general-port-forwarding-guide/"
         >
-          this
+          here
         </a>
         .
       </p>
@@ -153,7 +153,7 @@ const Usage = () => {
       </ol>
       <p>
         If you and your friends are playing over the internet, you have two
-        choices: If you port forwarded your router, simple google 'What's my IP
+        choices: If you port forwarded your router, simply google 'What's my IP
         address' and send that address to any players. If you used a tunneling
         service like{' '}
         <a
