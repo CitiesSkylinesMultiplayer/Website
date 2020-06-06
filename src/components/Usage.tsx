@@ -1,9 +1,11 @@
 import React from 'react';
+import Image from 'react-bootstrap/Image';
 
 const Usage = () => {
   return (
     <>
-      <h2 id="usage">Usage (General)</h2>
+      <h2 id="usage">Usage</h2>
+      <h3 id="usage-general">General</h3>
       <p>
         The Cities: Skylines Multiplayer mod enable multiplayer via a
         client-server approach. This means one player will act as the host (or
@@ -12,7 +14,7 @@ const Usage = () => {
         to play, and will have the multiplayer save on their computer).
       </p>
 
-      <h2 id="usage-host">Usage (Host)</h2>
+      <h3 id="usage-host">Host</h3>
       <p>
         <strong>Please Note: </strong> You may need to port forward your router
         depending on which connection method you use. More information about
@@ -21,15 +23,35 @@ const Usage = () => {
       <ol>
         <li>Ensure that the mod is installed and enabled.</li>
         <li>
-          Either create a new map, or open an existing map. It's highly
+          Either create a new map, or open an existing save. It's highly
           recommend that you{' '}
-          <strong>backup any cities before you play on multiplayer!</strong>
+          <strong>backup any saves before you play on multiplayer!</strong>
+          <br />
+          Saves are located in the following locations:
+          <ul>
+            <li>
+              <strong>Windows: </strong>
+              <code>%LOCALAPPDATA%\Colossal Order\Cities_Skylines\Saves\</code>
+            </li>
+            <li>
+              <strong>macOS: </strong>
+              <code>
+                ~/Library/Application Support/Colossal
+                Order/Cities_Skylines/Saves
+              </code>
+            </li>
+            <li>
+              <strong>Linux: </strong>
+              <code>~/.local/share/Colossal Order/Cities_Skylines/Saves</code>
+            </li>
+          </ul>
         </li>
         <li>
           Click on the 'Multiplayer' button on the top left of your screen to
           open the multiplayer menu.
         </li>
         <li>Update any of the fields to your liking, click 'Create Server'.</li>
+        <li>You should see a message saying that the server has started.</li>
       </ol>
 
       <h4 id="port-forwarding">Port Forwarding Strategies</h4>
@@ -44,7 +66,7 @@ const Usage = () => {
         </strong>
       </p>
 
-      <h5>Port forwarding your router</h5>
+      <h5 id="port-forwarding-router">Port forwarding your router</h5>
       <p>
         You will need to port forward either port '4230' or whatever port you
         set when hosting the game. There are many tutorials online that explain
@@ -59,7 +81,7 @@ const Usage = () => {
         .
       </p>
 
-      <h5>Using a tunneling service</h5>
+      <h5 id="port-forwarding-tunneling">Using a tunneling service</h5>
       <p>
         If you can't port forward your router (don't have access to the router,
         Internet Service Provider (ISP) restrictions etc.) you can use a
@@ -120,10 +142,13 @@ const Usage = () => {
           is the address that players on your local network should use to
           connect to the server.
           <br />
-          <img
+          <Image
+            className="mt-2"
             alt="ipconfig command with 'IPv4 Address highlighted'"
             src="/assets/ipconfig.png"
-          ></img>
+            fluid
+            rounded
+          />
         </li>
       </ol>
       <p>
@@ -140,7 +165,7 @@ const Usage = () => {
         </a>
         , you will need to use the IP address that is provided there.
       </p>
-      <h2 id="usage-players">Usage (Players)</h2>
+      <h3 id="usage-players">Players</h3>
       <ol>
         <li>Ensure that the mod is installed and enabled.</li>
         <li>Click the 'Join Game' button on the main menu.</li>

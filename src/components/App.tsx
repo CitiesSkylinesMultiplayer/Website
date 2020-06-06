@@ -4,10 +4,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import GettingStarted from './GettingStarted';
 import Usage from './Usage';
+import ReactGA from 'react-ga';
 
 function App() {
+  // Setup GA
+  ReactGA.initialize('UA-37972059-10');
+  ReactGA.pageview('/');
+
   return (
     <div className="App">
       <Navbar bg="dark" variant="dark" expand="lg" className="shadow-sm">
@@ -54,9 +61,16 @@ function App() {
         </Container>
       </Jumbotron>
 
-      <Container>
-        <GettingStarted />
-        <Usage />
+      <Container className="js-toc-content">
+        <Row>
+          <Col sm={12} md={9}>
+            <GettingStarted />
+            <Usage />
+          </Col>
+          <Col sm={12} md={3} className="d-none d-lg-block">
+            <div className="js-toc sticky-top" />
+          </Col>
+        </Row>
       </Container>
 
       <footer className="Footer pt-3 pb-1 mt-5">
