@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import ReactGA from 'react-ga';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import HomePage from '../routes/HomePage';
 import SupportedModsPage from '../routes/SupportedModsPage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,11 +31,11 @@ function App() {
       <div className="App">
         <Navbar bg="dark" variant="dark" expand="lg" className="shadow-sm">
           <Container>
-            <Navbar.Brand href="/">Cities: Skylines Multiplayer</Navbar.Brand>
+            <Navbar.Brand href="/#/">Cities: Skylines Multiplayer</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link className="mr-3" href="/supported-mods">
+                <Nav.Link className="mr-3" href="/#/supported-mods">
                   <FontAwesomeIcon className="mr-2" icon={faPuzzlePiece} />
                   Supported Mods
                 </Nav.Link>
