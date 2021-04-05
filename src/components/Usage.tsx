@@ -46,8 +46,9 @@ const Usage = () => {
             </li>
           </ul>
         </li>
+        <li>Open the "Pause Menu" (using the ESC key)</li>
         <li>
-          Click on the 'Multiplayer' button on the top left of your screen to
+          Click on the 'Multiplayer' button on the top of the menu to
           open the multiplayer menu.
         </li>
         <li>Update any of the fields to your liking, click 'Create Server'.</li>
