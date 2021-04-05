@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import ReactGA from 'react-ga';
-import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from '../routes/HomePage';
 import FAQPage from '../routes/FAQPage';
 import SupportedModsPage from '../routes/SupportedModsPage';
