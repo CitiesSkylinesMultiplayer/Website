@@ -7,19 +7,19 @@ import Container from 'react-bootstrap/Container';
 import ReactGA from 'react-ga';
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import HomePage from '../routes/HomePage';
+import FAQPage from '../routes/FAQPage';
 import SupportedModsPage from '../routes/SupportedModsPage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCoffee,
   faDownload,
   faPuzzlePiece,
   faCode,
+  faQuestionCircle,
 } from '@fortawesome/pro-duotone-svg-icons';
 
 import {
   faDiscord,
   faPatreon,
-  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
@@ -35,6 +35,11 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
+                <Nav.Link className="mr-3" href="/#/faq">
+                  <FontAwesomeIcon className="mr-2" icon={faQuestionCircle} />
+                  FAQ
+                </Nav.Link>
+                
                 <Nav.Link className="mr-3" href="/#/supported-mods">
                   <FontAwesomeIcon className="mr-2" icon={faPuzzlePiece} />
                   Supported Mods
@@ -114,6 +119,9 @@ function App() {
         <Switch>
           <Route path="/supported-mods">
             <SupportedModsPage />
+          </Route>
+          <Route path="/faq">
+            <FAQPage />
           </Route>
           <Route path="/">
             <HomePage />

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const SupportedModsPage = () => {
-  // Home page hit
+  // Supported mods page hit
   ReactGA.pageview('/supported-mods');
   console.log('hit /supported-mods');
 
@@ -26,6 +26,8 @@ const SupportedModsPage = () => {
       <Jumbotron fluid>
         <Container>
           <h1>Supported Mods</h1>
+          <p>Mods that have been tested to work (or partially work) with Cities: Skylines Multiplayer.</p>
+          <p className="mb-0">Edit this page <a href="https://github.com/CitiesSkylinesMultiplayer/CSM/wiki/Supported-Mods">here</a>.</p>
         </Container>
       </Jumbotron>
 

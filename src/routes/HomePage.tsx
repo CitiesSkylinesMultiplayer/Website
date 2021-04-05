@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import GettingStarted from '../components/GettingStarted';
 import Usage from '../components/Usage';
-import FAQ from '../components/FAQ';
 import ReactGA from 'react-ga';
 
 const HomePage = () => {
@@ -18,7 +17,7 @@ const HomePage = () => {
       <Jumbotron fluid>
         <Container>
           <h1>Welcome</h1>
-          <p>
+          <p className="mb-0">
             Cities: Skylines Multiplayer (CSM) is an in-development multiplayer
             mod for Cities: Skylines. <br />
             This mod aims to provide a simple client-server experience where
@@ -32,7 +31,6 @@ const HomePage = () => {
           <Col sm={12} md={9}>
             <GettingStarted />
             <Usage />
-            <FAQ />
           </Col>
           <Col sm={12} md={3} className="d-none d-lg-block">
             <div className="js-toc sticky-top" />
