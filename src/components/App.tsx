@@ -93,7 +93,7 @@ function App() {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     target="_blank"
-                    href="https://github.com/CitiesSkylinesMultiplayer/CSM/wiki/Development-Notes"
+                    href="https://github.com/CitiesSkylinesMultiplayer/CSM/search?q=%22Development+Notes%22&type=wikis"
                   >
                     Development Notes
                   </NavDropdown.Item>
