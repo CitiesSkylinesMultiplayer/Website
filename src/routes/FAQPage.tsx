@@ -32,7 +32,7 @@ const FAQPage = () => {
       </Jumbotron>
 
       <Container>
-        <Markdown source={source} />
+        <Markdown children={source} />
       </Container>
     </>
   );

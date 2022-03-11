@@ -32,7 +32,7 @@ const SupportedModsPage = () => {
       </Jumbotron>
 
       <Container>
-        <Markdown source={source} />
+        <Markdown children={source} />
       </Container>
     </>
   );

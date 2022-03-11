@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import ReactGA from 'react-ga';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from '../routes/HomePage';
 import FAQPage from '../routes/FAQPage';
 import SupportedModsPage from '../routes/SupportedModsPage';
@@ -31,16 +31,16 @@ function App() {
       <div className="App">
         <Navbar bg="dark" variant="dark" expand="lg" className="shadow-sm">
           <Container>
-            <Navbar.Brand href="/#/">Cities: Skylines Multiplayer</Navbar.Brand>
+            <Navbar.Brand href="/">Cities: Skylines Multiplayer</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link className="mr-3" href="/#/faq">
+                <Nav.Link className="mr-3" href="/faq">
                   <FontAwesomeIcon className="mr-2" icon={faQuestionCircle} />
                   FAQ
                 </Nav.Link>
                 
-                <Nav.Link className="mr-3" href="/#/supported-mods">
+                <Nav.Link className="mr-3" href="/supported-mods">
                   <FontAwesomeIcon className="mr-2" icon={faPuzzlePiece} />
                   Supported Mods
                 </Nav.Link>
@@ -91,12 +91,6 @@ function App() {
                   >
                     Developer Resources
                   </NavDropdown.Item>
-                  <NavDropdown.Item
-                    target="_blank"
-                    href="https://github.com/CitiesSkylinesMultiplayer/CSM/wiki/Development-Notes"
-                  >
-                    Development Notes
-                  </NavDropdown.Item>
                 </NavDropdown>
 
                 <Nav.Link
@@ -116,17 +110,11 @@ function App() {
           </Container>
         </Navbar>
 
-        <Switch>
-          <Route path="/supported-mods">
-            <SupportedModsPage />
-          </Route>
-          <Route path="/faq">
-            <FAQPage />
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/supported-mods" element={<SupportedModsPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/" element={<HomePage />} />
+        </Routes>
 
         <footer className="Footer pt-3 pb-1 mt-5">
           <Container>
