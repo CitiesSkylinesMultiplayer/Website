@@ -1,0 +1,15 @@
+{
+  "name": "updatechecker",
+  "version": "0.0.1",
+  "description": "Hosts a small server to server basic http webpage",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "w0rthi3",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3"
+  }
+}
