@@ -9,18 +9,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from '../routes/HomePage';
 import FAQPage from '../routes/FAQPage';
 import SupportedModsPage from '../routes/SupportedModsPage';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faDownload,
-  faPuzzlePiece,
-  faCode,
-  faQuestionCircle,
-} from '@fortawesome/pro-duotone-svg-icons';
 
 import {
-  faDiscord,
-  faPatreon,
-} from '@fortawesome/free-brands-svg-icons';
+  ArrowDownloadFilled,
+  BookQuestionMarkFilled,
+  PuzzlePieceFilled,
+  ClipboardCodeFilled,
+} from '@fluentui/react-icons';
 
 function App() {
   // Setup GA
@@ -36,12 +31,12 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link className="mr-3" href="/faq">
-                  <FontAwesomeIcon className="mr-2" icon={faQuestionCircle} />
+                  <BookQuestionMarkFilled className="mr-2" fontSize={22} />
                   FAQ
                 </Nav.Link>
-                
+
                 <Nav.Link className="mr-3" href="/supported-mods">
-                  <FontAwesomeIcon className="mr-2" icon={faPuzzlePiece} />
+                  <PuzzlePieceFilled className="mr-2" fontSize={22} />
                   Supported Mods
                 </Nav.Link>
 
@@ -49,7 +44,7 @@ function App() {
                   className="mr-3"
                   title={
                     <span>
-                      <FontAwesomeIcon className="mr-2" icon={faDownload} />
+                      <ArrowDownloadFilled className="mr-2" fontSize={22} />
                       Downloads
                     </span>
                   }
@@ -73,7 +68,7 @@ function App() {
                   className="mr-3"
                   title={
                     <span>
-                      <FontAwesomeIcon className="mr-2" icon={faCode} />
+                      <ClipboardCodeFilled className="mr-2" fontSize={22} />
                       Development
                     </span>
                   }
@@ -98,11 +93,9 @@ function App() {
                   target="_blank"
                   href="https://www.patreon.com/CSM_MultiplayerMod"
                 >
-                  <FontAwesomeIcon className="mr-2" icon={faPatreon} />
                   Patreon
                 </Nav.Link>
                 <Nav.Link target="_blank" href="https://discord.gg/RjACPhd">
-                  <FontAwesomeIcon className="mr-2" icon={faDiscord} />
                   Discord
                 </Nav.Link>
               </Nav>

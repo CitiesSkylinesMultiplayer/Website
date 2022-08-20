@@ -66,10 +66,9 @@ const GettingStarted = () => {
         </li>
 
         <li>
-          <strong>If you downloaded the mod</strong> you will need to install
-          it (Not needed when installing through the Steam Workshop).
-          First extract the downloaded .zip archive. There are two methods
-          to install the mod:
+          <strong>If you downloaded the mod</strong> you will need to install it
+          (not needed when installing through the Steam Workshop). First extract
+          the downloaded .zip archive. There are two methods to install the mod:
           <ul>
             <li>
               <strong>Installer: </strong>If running on windows, right click the
@@ -85,8 +84,8 @@ const GettingStarted = () => {
               installed. Run <code>pwsh install.ps1</code>.
             </li>
             <li>
-              <strong>Manually: </strong> Create a new folder called 'CSM' inside
-              the Cities: Skylines <code>Mods</code> folder:
+              <strong>Manually: </strong> Create a new folder called 'CSM'
+              inside the Cities: Skylines <code>Mods</code> folder:
               <ul>
                 <li>
                   <strong>Windows: </strong>
@@ -119,18 +118,18 @@ const GettingStarted = () => {
         <li>
           <strong>If you downloaded the mod</strong> you also need to install
           CitiesHarmony (Not needed when installing through the Steam Workshop).
-          Go to
+          Go to{' '}
           <a
             href="https://github.com/boformer/CitiesHarmony/releases"
             rel="noopener noreferrer"
             target="_blank"
           >
             https://github.com/boformer/CitiesHarmony/releases
-          </a>
-          to download the latest <code>CitiesHarmony.zip</code>.
-          Unzip the contained folder into the <code>Mods</code> folder
-          mentioned above so that it now contains a <code>CitiesHarmony</code>
-          folder in addition to the <code>CSM</code> folder.
+          </a>{' '}
+          and download the latest <code>CitiesHarmony.zip</code>. Unzip the
+          contained folder into the <code>Mods</code> folder mentioned above so
+          that it now contains a <code>CitiesHarmony</code> folder in addition
+          to the <code>CSM</code> folder.
         </li>
         <li>
           <strong>IMPORTANT: </strong> After launching Cities: Skylines, you
