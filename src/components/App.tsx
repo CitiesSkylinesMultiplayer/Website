@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.scss';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
@@ -11,11 +10,15 @@ import FAQPage from '../routes/FAQPage';
 import SupportedModsPage from '../routes/SupportedModsPage';
 
 import {
-  ArrowDownloadFilled,
-  BookQuestionMarkFilled,
-  PuzzlePieceFilled,
-  ClipboardCodeFilled,
-} from '@fluentui/react-icons';
+  CodeSlash,
+  Discord,
+  Download,
+  FileCode,
+  Github,
+  PuzzleFill,
+  QuestionCircle,
+  Steam,
+} from 'react-bootstrap-icons';
 
 function App() {
   // Setup GA
@@ -24,27 +27,27 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar bg="dark" variant="dark" expand="lg" className="shadow-sm">
+        <Navbar variant="dark" expand="lg" className="shadow bg-dark mb-4">
           <Container>
             <Navbar.Brand href="/">Cities: Skylines Multiplayer</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link className="mr-3" href="/faq">
-                  <BookQuestionMarkFilled className="mr-2" fontSize={22} />
+              <Nav className="me-auto">
+                <Nav.Link className="me-3" href="/faq">
+                  <QuestionCircle className="me-2" fontSize={18} />
                   FAQ
                 </Nav.Link>
 
-                <Nav.Link className="mr-3" href="/supported-mods">
-                  <PuzzlePieceFilled className="mr-2" fontSize={22} />
+                <Nav.Link className="me-3" href="/supported-mods">
+                  <PuzzleFill className="me-2" fontSize={18} />
                   Supported Mods
                 </Nav.Link>
 
                 <NavDropdown
-                  className="mr-3"
+                  className="me-3"
                   title={
                     <span>
-                      <ArrowDownloadFilled className="mr-2" fontSize={22} />
+                      <Download className="me-2" fontSize={18} />
                       Downloads
                     </span>
                   }
@@ -54,21 +57,23 @@ function App() {
                     target="_blank"
                     href="https://steamcommunity.com/sharedfiles/filedetails/?id=1558438291"
                   >
+                    <Steam className="me-2" fontSize={18} />
                     Steam Workshop
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     target="_blank"
                     href="https://github.com/CitiesSkylinesMultiplayer/CSM/releases"
                   >
+                    <Download className="me-2" fontSize={18} />
                     Direct
                   </NavDropdown.Item>
                 </NavDropdown>
 
                 <NavDropdown
-                  className="mr-3"
+                  className="me-3"
                   title={
                     <span>
-                      <ClipboardCodeFilled className="mr-2" fontSize={22} />
+                      <CodeSlash className="me-2" fontSize={18} />
                       Development
                     </span>
                   }
@@ -78,24 +83,27 @@ function App() {
                     target="_blank"
                     href="https://github.com/CitiesSkylinesMultiplayer/CSM/"
                   >
+                    <Github className="me-2" fontSize={18} />
                     GitHub Repository
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     target="_blank"
                     href="https://github.com/CitiesSkylinesMultiplayer/CSM/wiki/Developer-Resources"
                   >
+                    <FileCode className="me-2" fontSize={18} />
                     Developer Resources
                   </NavDropdown.Item>
                 </NavDropdown>
 
                 <Nav.Link
-                  className="mr-3"
+                  className="me-3"
                   target="_blank"
                   href="https://www.patreon.com/CSM_MultiplayerMod"
                 >
                   Patreon
                 </Nav.Link>
                 <Nav.Link target="_blank" href="https://discord.gg/RjACPhd">
+                  <Discord className="me-2" fontSize={18} />
                   Discord
                 </Nav.Link>
               </Nav>
@@ -109,12 +117,14 @@ function App() {
           <Route path="/" element={<HomePage />} />
         </Routes>
 
-        <footer className="Footer pt-3 pb-1 mt-5">
+        <footer className="pb-1 mt-4">
           <Container>
             <p>
               <small>
-                This website and mod are in no way affiliated with Cities:
-                Skylines or Paradox Interactive / Colossal Order
+                <em>
+                  This website and mod are in no way affiliated with Cities:
+                  Skylines or Paradox Interactive / Colossal Order.
+                </em>
               </small>
             </p>
           </Container>

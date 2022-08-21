@@ -3,7 +3,7 @@ import React from 'react';
 const GettingStarted = () => {
   return (
     <>
-      <h2 id="getting-started">Getting Started</h2>
+      <h3 id="getting-started">Getting Started</h3>
       <ol>
         <li>
           Depending on where your purchased Cities: Skylines, there are a few

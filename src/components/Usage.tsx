@@ -4,8 +4,8 @@ import Image from 'react-bootstrap/Image';
 const Usage = () => {
   return (
     <>
-      <h2 id="usage">Usage</h2>
-      <h3 id="usage-general">General</h3>
+      <h3 id="usage">Usage</h3>
+      <h4 id="usage-general">General</h4>
       <p>
         The Cities: Skylines Multiplayer mod enables multiplayer via a
         client-server approach. This means one player will act as the host (or
@@ -14,7 +14,7 @@ const Usage = () => {
         play).
       </p>
 
-      <h3 id="usage-host">Host</h3>
+      <h4 id="usage-host">Host</h4>
       <p>
         <strong>Please Note: </strong> You may need to port forward your router
         depending on which connection method you use. More information about
@@ -48,14 +48,14 @@ const Usage = () => {
         </li>
         <li>Open the "Pause Menu" (using the ESC key)</li>
         <li>
-          Click on the 'Multiplayer' button on the top of the menu to
-          open the multiplayer menu.
+          Click on the 'Multiplayer' button on the top of the menu to open the
+          multiplayer menu.
         </li>
         <li>Update any of the fields to your liking, click 'Create Server'.</li>
         <li>You should see a message saying that the server has started.</li>
       </ol>
 
-      <h4 id="port-forwarding">Port Forwarding Strategies</h4>
+      <h5 id="port-forwarding">Port Forwarding Strategies</h5>
       <p>
         This mod requires the host (or server) to expose the port '4230' (or
         whatever port was entered) to the internet.
@@ -67,7 +67,7 @@ const Usage = () => {
         </strong>
       </p>
 
-      <h5 id="port-forwarding-router">Port forwarding your router</h5>
+      <h6 id="port-forwarding-router">Port forwarding your router</h6>
       <p>
         You will need to port forward either port '4230' or whatever port you
         set when hosting the game. There are many tutorials online that explain
@@ -82,7 +82,7 @@ const Usage = () => {
         .
       </p>
 
-      <h5 id="port-forwarding-tunneling">Using a tunneling service</h5>
+      <h6 id="port-forwarding-tunneling">Using a tunneling service</h6>
       <p>
         If you can't port forward your router (don't have access to the router,
         Internet Service Provider (ISP) restrictions etc.) you can use a
@@ -114,7 +114,7 @@ const Usage = () => {
       </div>
       <br />
 
-      <h4 id="which-ip">Which IP address do players use?</h4>
+      <h5 id="which-ip">Which IP address do players use?</h5>
       <p>
         The IP address used for connecting will depend on which port forwarding
         strategy you used above and how/where your planning on playing the game.
@@ -166,7 +166,7 @@ const Usage = () => {
         </a>
         , you will need to use the IP address that is provided there.
       </p>
-      <h3 id="usage-players">Players</h3>
+      <h4 id="usage-players">Players</h4>
       <ol>
         <li>Ensure that the mod is installed and enabled.</li>
         <li>Click the 'Join Game' button on the main menu.</li>

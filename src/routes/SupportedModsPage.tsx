@@ -2,12 +2,12 @@ import React from 'react';
 import ReactGA from 'react-ga';
 import Markdown from 'react-markdown';
 import Container from 'react-bootstrap/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import { Button, Card } from 'react-bootstrap';
+import { PencilSquare } from 'react-bootstrap-icons';
 
 const SupportedModsPage = () => {
   // Supported mods page hit
   ReactGA.pageview('/supported-mods');
-  console.log('hit /supported-mods');
 
   const [source, setSource] = React.useState<string>(
     'Loading list of supported mods...'
@@ -23,16 +23,25 @@ const SupportedModsPage = () => {
 
   return (
     <>
-      <Jumbotron fluid>
-        <Container>
-          <h1>Supported Mods</h1>
-          <p>Mods that have been tested to work (or partially work) with Cities: Skylines Multiplayer.</p>
-          <p className="mb-0">Edit this page <a href="https://github.com/CitiesSkylinesMultiplayer/CSM/wiki/Supported-Mods">here</a>.</p>
-        </Container>
-      </Jumbotron>
-
       <Container>
-        <Markdown children={source} />
+        <h1>Supported Mods</h1>
+        <p>
+          Mods that have been tested to work (or partially work) with Cities:
+          Skylines Multiplayer.
+        </p>
+        <Button
+          className="mb-3"
+          href="https://github.com/CitiesSkylinesMultiplayer/CSM/wiki/Supported-Mods"
+        >
+          <PencilSquare className="me-2" fontSize={16} />
+          Edit
+        </Button>
+
+        <Card className="shadow-sm">
+          <Card.Body>
+            <Markdown children={source} />
+          </Card.Body>
+        </Card>
       </Container>
     </>
   );
